@@ -1,0 +1,101 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+}
+.submission{
+    height: 90vh;
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 0rem auto;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3),-10px -10px 10px rgba(255,255,255,.5);
+    background-image: url('../object2.jpg'),url('../object.jpg');
+    background-repeat: no-repeat , no-repeat;
+    background-position: 100% 0%,100% 100%;
+    background-size: 300px 300px,400px 400px;
+}
+
+
+.submission:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0%;
+    clip-path: polygon(0% 0%, 100% 0%, 60% 103%, 0% 100%);
+    width: 60%;
+    height: 100%;
+    background-image: linear-gradient(to top right,rgb(66, 66, 250) ,rgb(55, 90, 243) , rgb(130, 159, 238),rgb(14, 144, 231) ,white);
+}
+
+.innercnt{
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    position: relative;
+    z-index: 3;
+    background-color: rgba(255,255,255);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+    background-image: linear-gradient(to top right,rgb(66, 66, 250) ,rgb(55, 90, 243) , rgb(130, 159, 238),rgb(14, 144, 231) ,white);    transition: .5s ease-in-out;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+}
+
+@media screen and (min-width:800px){
+    .innercnt{
+        width: 40%;
+        height: 60%;
+    }
+}
+
+.innercnt h2,.innercnt div{
+    color: white;
+    font-family: cursive;
+}
+
+
+.leftcnt,.rightcnt{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.leftcnt{
+    height: 100%;
+    background-size: cover;
+    background-position:center;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, .1),inset -5px -5px 5px rgba(0, 0, 0, .1);
+    /* background-image: url('https://image.shutterstock.com/image-vector/winner-successful-businessman-holding-first-600w-1182347431.jpg'); */
+    background-image: url('../object4.jpg');
+    background-clip: border-box(0%,0%,10%,0%);
+}
+
+.rightcnt{
+    padding:1rem 0;
+}
+
+#reattemptbtn{
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-family: cursive;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2),
+      inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#reattemptbtn:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2),
+      inset 5px 5px 5px rgba(0, 0, 0, 0.1),
+     inset  5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
